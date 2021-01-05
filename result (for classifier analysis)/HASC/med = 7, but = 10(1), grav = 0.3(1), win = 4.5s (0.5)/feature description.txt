@@ -1,0 +1,45 @@
+feature set 1:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk']
+feature: time(mean, std, var, max, min, mad)
+
+feature set 2:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody']
+feature: time(mean, std, var, max, min, mad); freq(mean, mad)
+
+feature set 3:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody']
+feature: time(mean, std, var, max, min, mad); freq(mean, mean_freq, mad)
+
+feature set 4:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody']
+feature: time(mean, std, var, max, min, mad, average_height); freq(mean, mean_freq, mad)
+
+feature set 5:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody', 'fbody_jerk']
+feature: time(mean, std, var, max, min, mad, average_height); freq(mean, mean_freq, mad)
+
+feature set 6:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody', 'fbody_jerk']
+feature: time(mean, std, var, max, min, mad, average_height); freq(mean, mean_freq, mad, skewness, kurtosis, iqr_range)
+
+feature set 7:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk', 'fbody', 'fbody_jerk']
+feature: time(mean, std, var, max, min, mad, average_height, iqr_range); freq(mean, std, max, min, mean_freq, mad, skewness, kurtosis, iqr_range)
+
+feature set 8:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk']
+feature: time(mean, std)
+
+feature set 9:
+axis = ['_x', '_y', '_z', '_mag']
+component = ['tbody', 'tgrav', 'tbody_jerk']
+feature: time(mean, std, max, min)
+
